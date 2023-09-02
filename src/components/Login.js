@@ -52,7 +52,6 @@ const Login = () => {
           </span>
         </p>
       </form>
-      <div></div>
     </div>
   );
 };
