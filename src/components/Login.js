@@ -17,6 +17,7 @@ const Login = () => {
     event.preventDefault();
     const m = checkValidData(email.current.value, password.current.value);
     setErrorMessage(m);
+    //Then proceed signIn or SIgnUp
   };
   return (
     <div>
