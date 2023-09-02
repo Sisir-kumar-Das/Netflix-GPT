@@ -6,6 +6,7 @@ const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const email = useRef(null);
   const password = useRef(null);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
@@ -15,7 +16,7 @@ const Login = () => {
     //Validate the form data
     event.preventDefault();
     const m = checkValidData(email.current.value, password.current.value);
-    console.log(m);
+    setErrorMessage(m);
   };
   return (
     <div>
@@ -50,6 +51,7 @@ const Login = () => {
           placeholder="Password"
           className="p-4 my-4 w-full rounded-md bg-gray-700 "
         />
+        <p className="text-red-500">{errorMessage}</p>
         <button
           className=" p-4 my-6 bg-red-700 w-full rounded-md"
           onClick={handleButtonClick}
