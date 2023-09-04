@@ -7,6 +7,7 @@ import { addUser, removeUser } from "../utils/userSlice";
 import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
+import { NETFLIX_LOGO } from "../utils/constant";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -47,11 +48,7 @@ const Header = () => {
 
   return (
     <div className=" absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img
-        className="w-44 "
-        src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
-        alt="Logo Pic"
-      />
+      <img className="w-44 " src={NETFLIX_LOGO} alt="Logo Pic" />
       {user && (
         <div className="flex p-2 m-2">
           <img className=" w-14 h-14 " alt="user icon" src={user?.photoURL} />
