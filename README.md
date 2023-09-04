@@ -15,6 +15,7 @@
 - Implemented SignOut
 - BugFix : Signup User disPlayName and Profile Picture Updated
 - Bugfix : If the user is not signed in Redirect /browse to Loginpage and vice versa.
+- Unsubscribed to the UnauthStateChanges callback
 
 # Features
 
