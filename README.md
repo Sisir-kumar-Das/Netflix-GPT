@@ -13,8 +13,10 @@
 - Implement Sign in User API
 - Created Redux Store and User Slice
 - Implemented SignOut
-- SignIn Bug Fixed
-- Update Profile
+- BugFix : Signup User disPlayName and Profile Picture Updated
+- Bugfix : If the user is not signed in Redirect /browse to Loginpage and vice versa.
+- Unsubscribed to the UnauthStateChanges callback
+- Add hardcoded values to the constants file
 
 # Features
 
