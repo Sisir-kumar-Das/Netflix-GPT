@@ -12,6 +12,9 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1OWQ2ODM2MDAzODkyMGI4OWQzNmRmMjkyODg0ZWU0ZCIsInN1YiI6IjY0Zjc0NGUyZjI5ZDY2MzU2NGViNDM2YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.pxmMp-LJQJaZfz1g45ezwxXbVMYIYiP-HVVMCG4ZdkY",
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1M2U4NWZmZjdiN2IyMmEwY2M0ZjZkYzNhMzNlMjdhNiIsInN1YiI6IjY1YWI3NDYzYmU2ZDg4MDBiZDkyNzM5NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.0TylKoyrHcTovx1TgiojEebYPXFRxzt5EZqK5s7fYbI",
   },
 };
+
+// const API_KEY= "53e85fff7b7b22a0cc4f6dc3a33e27a6"
+// const READ_ACESS_TOKEN= "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1M2U4NWZmZjdiN2IyMmEwY2M0ZjZkYzNhMzNlMjdhNiIsInN1YiI6IjY1YWI3NDYzYmU2ZDg4MDBiZDkyNzM5NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.0TylKoyrHcTovx1TgiojEebYPXFRxzt5EZqK5s7fYbI"
