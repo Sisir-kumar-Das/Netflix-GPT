@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { NETFLIX_LOGO } from "../utils/constant";
+import { toogleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -46,11 +47,22 @@ const Header = () => {
     };
   }, []);
 
+  const handleGptSearch = () => {
+    // Toogle GPT Search
+    dispatch(toogleGptSearchView());
+  };
+
   return (
     <div className=" absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img className="w-44 " src={NETFLIX_LOGO} alt="Logo Pic" />
       {user && (
         <div className="flex p-2 m-2">
+          <button
+            className=" rounded-lg bg-red-700 text-white cursor-pointer font-bold px-4 mx-4 hover:bg-red-500"
+            onClick={handleGptSearch}
+          >
+            GPT Search
+          </button>
           <img className=" w-14 h-14 " alt="user icon" src={user?.photoURL} />
 
           <button

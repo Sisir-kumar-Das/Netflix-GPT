@@ -33,6 +33,7 @@
 - Made the Browser Page amazing with Tailwind Css
 - Created usePopularMovies Hook and it to the MovieSlice
 - Created useTopRatedMovies Hook and it to the MovieSlice
+- GPT search Feature
 
 # Features
 
