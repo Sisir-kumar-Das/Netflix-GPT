@@ -9,6 +9,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { NETFLIX_LOGO } from "../utils/constant";
 import { toogleGptSearchView } from "../utils/gptSlice";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -54,7 +55,9 @@ const Header = () => {
 
   return (
     <div className=" absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img className="w-44 " src={NETFLIX_LOGO} alt="Logo Pic" />
+      <Link to="/">
+        <img className="w-44 " src={NETFLIX_LOGO} alt="Logo Pic" />
+      </Link>
       {user && (
         <div className="flex p-2 m-2">
           <button
